@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
     <title>Exercice Moulin</title>
 </head>
 
@@ -17,34 +20,32 @@
 
             <h1>Gîte du moulin de Pierremont</h1>
 
-            <nav>
-                <ul class="niveau1">
-                    <li class="sousmenu"><a href="">Hébergements classiques</a>
-                        <!-- <ul class="niveau2">
-                            <li><a href="">Studio</a></li>
-                            <li><a href="">Gîte</a></li>
-                            <li><a href="">Suite avec jaccuzzi</a></li>
-                            <li><a href="">Aire de camping car</a></li>
-                        </ul> -->
+            <nav id='menu'>
+                <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                <ul>
+                    <li><a class='dropdown-arrow' href='http://'>Hébergements classiques</a>
+                        <ul class='sub-menus'>
+                            <li><a href='http://'>Studio</a></li>
+                            <li><a href='http://'>Gîte</a></li>
+                            <li><a href='http://'>Suite avec jaccuzzi</a></li>
+                            <li><a href='http://'>Aire de camping-car</a></li>
+                        </ul>
                     </li>
-
-                    <li class="sousmenu"><a href="">Hébergements insolites</a>
-                        <!-- <ul class="niveau2">
-                            <li><a href="">Kota</a></li>
-                            <li><a href="">Kota scandinave</a></li>
-                            <li><a href="">Roulotte</a></li>
-                        </ul> -->
+                    <li><a class='dropdown-arrow' href='http://'>Hébergements insolites</a>
+                        <ul class='sub-menus'>
+                            <li><a href='http://'>Kota</a></li>
+                            <li><a href='http://'>Kota scandinave</a></li>
+                            <li><a href='http://'>Roulotte</a></li>
+                        </ul>
                     </li>
-
-                    <li class="sousmenu"><a href="">Services</a>
-                        <!-- <ul class="niveau2">
-                            <li><a href="">Le Kota grill</a></li>
-                            <li><a href="">Les cartes cadeaux</a></li>
-                            <li><a href="">Les packs</a></li>
-                        </ul> -->
+                    <li><a class='dropdown-arrow' href='http://'>Services</a>
+                        <ul class='sub-menus'>
+                            <li><a href='http://'>Le Kota grill</a></li>
+                            <li><a href='http://'>Les cartes cadeaux</a></li>
+                            <li><a href='http://'>Les packs</a></li>
+                        </ul>
                     </li>
-
-                    <li><a href="">Contact</a></li>
+                    <li><a href='http://'>Contact</a></li>
                 </ul>
             </nav>
         </header>
