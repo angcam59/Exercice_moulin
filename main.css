@@ -27,6 +27,10 @@ header {
     align-items:center;
 }
 
+header div {
+    padding: 50px;
+}
+
 h1 {
     color: black;
     border: 2px solid black;
@@ -38,6 +42,7 @@ h1 {
 nav, ul {
     width: 100%;
     height: 100%;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -60,110 +65,125 @@ li {
 
 .aPropos {
     border: 2px solid black;
-    padding: 15px;
-    width: 100%;
-    height : 500px;
+    padding: 15px 0 0 0;
+    width: auto;
+    height : 535px;
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: center;
 }
 
 .aPropos h2 {
     border: 2px solid black;
-    margin: 0 0 0 50px;
+    /* margin: 0 0 0 50px; */
+    padding: 20px;
+    width: 100%;
 }
 
 .aPropos p {
-    border: 2px solid black;
-    margin: 50px;
+    border: 2px solid black;    
     width: 70%;
     height: auto;
+    padding: 20px;
+    margin:50px;
 }
 
 .aPropos img {
     border: 2px solid black;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 945px;
+    /* object-fit: cover; */
 }   
 
 .nosExterieurs {
     border: 2px solid black;
-    margin: 15px;
+    padding: 15px 0 0 0;
     width: 100%;
-    height : 500px;
+    height : 535px;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .nosExterieurs h2 {
     border: 2px solid black;
-    margin: 0 0 0 50px;
+    padding: 20px;
 }
 
 .nosExterieurs p {
     border: 2px solid black;
     margin: 50px;
+    padding: 20px;
     width: 70%;
     height: auto;
-    ;
 }
 
 .nosExterieurs img {
     border: 2px solid black;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 945px;
 }   
 
 .nosCoordonnees {
     border: 2px solid black;
-    padding: 10px;
-    width: 100%;
-    height : 500px;
+    padding: 15px 0 0 0;
+    width: auto;
+    height : 535px;
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content:space-evenly;
 }
 
 .nosCoordonnees h2 {
     border: 2px solid black;
-    /* margin: 0 0 0 25px; */
+    padding: 20px;
 }
 .nosCoordonnees p {
     border: 2px solid black;
     width: 70%;
     height: auto;
+    margin: 50px;
+    padding: 20px;
 }
 
 .nosCoordonnees img {
-    height: 100%;
-    width: auto;
+    border: 2px solid black;
+    height: auto;
+    width: 945px;
 }   
-
-
 
 footer {
     width: 100%;
-    height: 160px;
+    height: 170px;
     background-color: rgb(207, 223, 207); 
     display: flex;
-    align-items:center;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer div {
     display: flex;
     flex-direction: column;
-    
+    padding: 25px;
+    font-size: 1.5rem;
 }
 
-footer button {
+footer div a {
+    padding: 15px;
+}
+
+
+/* footer button {
     width: auto;
     height: 50px;
     background-color: aqua;
     margin: 20px;
     padding: 10px;
+} */
+
+footer img {
+    width: 70px;
+    height: auto;
 }
+
+
 
 /*
 nav  ul li { float:left; list-style: none; }
