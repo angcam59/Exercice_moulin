@@ -16,7 +16,7 @@ box-sizing: border-box;
     /* Flexbox */
     display:flex;
     flex-wrap: wrap;
-    flex-direction: row;
+   
 }
 
 header {
@@ -25,6 +25,9 @@ header {
     background-color: rgb(207, 223, 207); 
     display: flex;
     align-items:center;
+    /* position: fixed;
+    top: 0;
+    overflow: hidden; */
 }
 
 header div {
@@ -46,6 +49,27 @@ nav {
 /* ul {
     display: flex;
 } */
+main {
+    /* margin-top: 170px; */
+}
+
+.grandVisuel_picture {
+    position: relative;
+}
+
+.btnReserver {
+    position: absolute; 
+    top: 1000px;
+    left:50%;    
+}
+
+button {
+    background-color: rgb(127, 255, 159);
+  
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px; 
+}
 
 .grandVisuel_picture {
     width: 100%;
@@ -134,7 +158,7 @@ nav {
 
 .nosCoordonnees img {
     border: 2px solid black;
-    height: auto;
+    height: 530px;
     width: 945px;
 }   
 
