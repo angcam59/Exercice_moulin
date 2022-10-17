@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/page_contact.css">
+    <title>Page Contact</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <a class="logo_homePage" href='../index.html'>
+                    <img src="/images/Logo_giteDuMoulin1.png" alt="Logo GiteDuMoulin"></a>
+            </div>
+
+            <h1>Gîte du moulin de Pierremont</h1>
+
+            <nav id='menu'>
+                <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                <ul>
+                    <li><a class='dropdown-arrow' href='http://'>Hébergements classiques</a>
+                        <ul class='sub-menus'>
+                            <li><a href='http://'>Studio</a></li>
+                            <li><a href='http://'>Gîte</a></li>
+                            <li><a href='http://'>Suite avec jaccuzzi</a></li>
+                            <li><a href='http://'>Aire de camping-car</a></li>
+                        </ul>
+                    </li>
+                    <li><a class='dropdown-arrow' href='http://'>Hébergements insolites</a>
+                        <ul class='sub-menus'>
+                            <li><a href='http://'>Kota</a></li>
+                            <li><a href='http://'>Kota scandinave</a></li>
+                            <li><a href='http://'>Roulotte</a></li>
+                        </ul>
+                    </li>
+                    <li><a class='dropdown-arrow' href='http://'>Services</a>
+                        <ul class='sub-menus'>
+                            <li><a href='http://'>Le Kota grill</a></li>
+                            <li><a href='http://'>Les cartes cadeaux</a></li>
+                            <li><a href='http://'>Les packs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='http://'>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+            <h1>Formulaire de contact</h1>
+            <form>
+                <fieldset>
+                    <legend>Patronyme</legend>
+                    <div>
+                        <label for="lastname">Nom</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+
+                    <div>
+                        <label for="firstname">Prénom</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adresse</legend>
+                    <div>
+                        <label for="street">N° et Libellé de voie</label>
+                        <input type="text" id="street" name="street" required>
+                    </div>
+
+                    <div>
+                        <label for="zipCode">Code Postal</label>
+                        <input type="text" id="zipCode" name="zipCode" maxlength="5" required>
+                    </div>
+
+                    <div>
+                        <label for="city">Ville</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre message</legend>
+                    <div>
+                        <label for="birthdate">Date de naissance</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+
+                    <div>
+                        <label for="description">Descriptif</label>
+                        <textarea name="description" id="description" cols="60" rows="10"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Compte</legend>
+                    <div>
+                        <label for="pseudo">Pseudo</label>
+                        <input type="text" name="pseudo" id="pseudo" placeholder="3 à 8 caractères" minlength="3"
+                            maxlength="8" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Mot de passe</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                    <div>
+                        <label for="passwordConfirm">Confirmer Mot de passe</label>
+                        <input type="password" name="passwordConfirm" id="passwordConfirm" required>
+                    </div>
+                </fieldset>
+
+                <button>Envoyer</button>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
