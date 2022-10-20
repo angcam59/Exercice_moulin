@@ -4,23 +4,26 @@ main{
     display: flex;
    
     /* position: relative; */
-
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-h1 {
-    display: flex;
+h2 {
+    /* display: flex; */
     width: 100%;
-    /* text-align: center; */
+    text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
+    
     /* position: absolute; */
-    /* 
-     */
-}
+    margin-top: auto;
+    margin-left: 50%;
+    /* flex-wrap: wrap; */
+    transform: translate(-50%);
+ }
 
 label
 {
@@ -40,17 +43,18 @@ div
     Le(s) label contenu dans la dernière div du dernier fieldset 
 */
 
-fieldset:nth-of-type(3) div:last-child label, fieldset:last-of-type div:nth-of-type(2) label, fieldset:last-of-type div:last-of-type label
+/* fieldset:nth-of-type(3) div:last-child label, fieldset:last-of-type div:nth-of-type(2) label, fieldset:last-of-type div:last-of-type label
 {
     width: auto;
-    /* Mise de la largeur sur auto pour qu'elle ne soit plus à 200px, gère son espace en fonction de son texte */
-}
+    Mise de la largeur sur auto pour qu'elle ne soit plus à 200px, gère son espace en fonction de son texte
+} */
 
 fieldset 
 {
     margin: 10px 0;
     border-radius: 25px;
-    -webkit-border-radius: 25px;
+    padding: 25px;
+    -webkit-border-radius: 20px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
@@ -58,14 +62,18 @@ fieldset
 
 button
 {
-    font-size: 1.5em;
+    font-size: 1.1em;
     background: #00f;
     color: #fff;
-    width: 350px;
-    height: 40px;
+    width: 200px;
+    height: auto;
     border-radius: 25px;
     padding: 4px;
     text-align: center;
+
+    /* ang */
+    margin-left: 50%;
+    transform: translate(-50%);
 
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
