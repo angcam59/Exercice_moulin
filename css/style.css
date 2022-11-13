@@ -1,16 +1,8 @@
-/* html {
-box-sizing: border-box;
-} */
-
 *, ::before, ::after {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
-/* *{
-    border: 1px solid black;
-} */
 
 .container {
     width: 100%;
@@ -27,6 +19,7 @@ header {
     height: 160px;
     background-color: rgb(207, 223, 207); 
     display: flex;
+    justify-content: space-between;
     align-items: center;
     
     /* position: fixed;
@@ -35,27 +28,25 @@ header {
 } 
 
 header div {
-    padding: 50px;
+    padding: 30px;
 }
 
 h1 {
     color: black;
-    /* border: 2px solid black; */
-    padding: 10px; 
-    width: 60%;
     text-align: center;  
-}
-
-nav {
-    width: 100%;
 }
 
 main {
     /* margin-top: 170px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .grandVisuel_picture {
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .btnReserver {
@@ -75,103 +66,49 @@ main {
      
 }
 
-button {
-    background-color: rgb(127, 255, 159);
-  
-    font-size: 25px;
-    padding: 10px;
-    border-radius: 10px; 
-}
-
-.grandVisuel_picture {
+.aPropos, .nosExterieurs, .nosCoordonnees {
+    border: 5px solid black;
+    /* padding: 15px 0 0 0; */
     width: 100%;
-    height: auto;
-}
-
-.aPropos {
-    border: 2px solid black;
-    padding: 15px 0 0 0;
-    width: auto;
-    height : 535px;
+    /* height : 535px; */
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
-.aPropos h2 {
+.aPropos div:nth-child(1), .nosExterieurs div:nth-child(2),
+.nosCoordonnees div:nth-child(1)
+{
+    height : 535px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(247, 3, 3);
+    justify-content: space-around;
+}
+
+.aPropos h2, .nosExterieurs h2, .nosCoordonnees h2 
+{
     border: 2px solid black;
-    /* margin: 0 0 0 50px; */
     padding: 20px;
     width: 100%;
 }
 
-.aPropos p {
+.aPropos p, .nosExterieurs p, .nosCoordonnees p 
+{
     border: 2px solid black;    
-    width: 70%;
-    height: auto;
-    padding: 20px;
-    margin:50px;
+    width: 60%;
+    padding: 20px;    
+    align-self: center;
 }
 
-.aPropos img {
+.aPropos img, .nosExterieurs img, .nosCoordonnees img 
+{
     border: 2px solid black;
-    height: auto;
-    width: 945px;
+    /* height: auto; */
+    /* width: 945px; */
+    height: 535px;
     /* object-fit: cover; */
-}   
-
-.nosExterieurs {
-    border: 2px solid black;
-    padding: 15px 0 0 0;
-    width: 100%;
-    height : 535px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.nosExterieurs h2 {
-    border: 2px solid black;
-    padding: 20px;
-}
-
-.nosExterieurs p {
-    border: 2px solid black;
-    margin: 50px;
-    padding: 20px;
-    width: 70%;
-    height: auto;
-}
-
-.nosExterieurs img {
-    border: 2px solid black;
-    height: auto;
-    width: 945px;
-}   
-
-.nosCoordonnees {
-    border: 2px solid black;
-    padding: 15px 0 0 0;
-    width: auto;
-    height : 535px;
-    display: flex;
-    justify-content:space-evenly;
-}
-
-.nosCoordonnees h2 {
-    border: 2px solid black;
-    padding: 20px;
-}
-.nosCoordonnees p {
-    border: 2px solid black;
-    width: 70%;
-    height: auto;
-    margin: 50px;
-    padding: 20px;
-}
-
-.nosCoordonnees img {
-    border: 2px solid black;
-    height: 530px;
-    width: 945px;
 }   
 
 footer {

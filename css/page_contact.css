@@ -12,6 +12,7 @@ h2 {
     /* display: flex; */
     width: 100%;
     text-align: center;
+    padding-top: 20px;
 }
 
 form {
@@ -65,7 +66,7 @@ button
     font-size: 1.1em;
     background: #00f;
     color: #fff;
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 25px;
     padding: 4px;
